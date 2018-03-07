@@ -24,5 +24,9 @@
     "解析"
   ],
   "author": "aliyu",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ali1213/youyun/issues"
+  },
+  "homepage": "https://github.com/Ali1213/youyun#readme"
 }
