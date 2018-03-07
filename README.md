@@ -17,13 +17,20 @@
 
 ```javascript
 const { fetchBalance, resumeParse } = require('youyun');
-
-// 获取账户余额
-// return Promise
+/*
+ * 上传简历解析
+ * @params {}
+ * @return {Promise}
+ * @return {object}
+*/
 fetchBalance().then( r => console.log(r))
 
-// 上传简历解析
-// return Promise
+/*
+ * 上传简历解析
+ * @params {String}  需要识别的简历文件路径
+ * @return {Promise}
+ * @return {object}
+*/
 resumeParse(filepath).then( r => console.log(r))
 
 ```

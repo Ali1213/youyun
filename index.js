@@ -6,15 +6,10 @@ const fileType = require('file-type');
 // request.debug = true;
 const settings = require('./settings.json');
 const debug = require('debug');
-
+const parseUrl = settings.url;
 // https 请求
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
-const parseUrl = {
-  text: 'https://api.youyun.com/v1/resume',
-  image: 'https://api.youyun.com/v1/image',
-  balance: 'https://api.youyun.com/v1/balance',
-}
 const headers = {
   'cache-control': 'no-cache',
   'content-type': 'multipart/form-data'
@@ -111,25 +106,6 @@ const resumeParse = async( filePath ) => {
     filePath,
   });
 }
-
-// fetchBalance();
-// resumeParse(path.join(__dirname,'test','pdfzhuan.jpg')).catch(e=>log(e)).then((result)=>{
-//   util.promisify(fs.writeFile)(path.join(__dirname,'test','pdfzhuan.json'),JSON.stringify(result))
-// });
-
-// const runAll = async() => {
-//   let dirpath = path.join(__dirname,'test');
-//   let files = fs.readdirSync(dirpath);
-//   console.log(files.length);
-//   for(let file of files){
-//     if(file.startsWith('.')) continue;
-//     // let result = await resumeParse(path.join(dirpath,file))
-//     let result = await resumeParse(path.join(dirpath,file))
-//     await util.promisify(fs.writeFile)(`${file}.json`,JSON.stringify(result));
-//   }
-// }
-
-// runAll().catch(e=>console.log(e));
 
 module.exports = {
   fetchBalance,
