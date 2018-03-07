@@ -1,8 +1,8 @@
 {
-  "secret_key": "请输入",
+  "secret_key": "Gu2H7uZfpq4M31Q6REUSuwia2nR7r900000449ff",
   "url": {
     "text": "https://api.youyun.com/v1/resume",
     "image": "https://api.youyun.com/v1/image",
-    "balance": "https://api.youyun.com/v1/balance",
+    "balance": "https://api.youyun.com/v1/balance"
   }
 }
